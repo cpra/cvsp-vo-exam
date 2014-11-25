@@ -1,0 +1,141 @@
+
+\documentclass[paper=A4,11pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{fixltx2e}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\usepackage{xspace}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{graphicx}
+\usepackage[margin=1em,labelfont=bf]{caption}
+\usepackage{booktabs}
+\usepackage{subcaption}
+
+\usepackage[backend=biber]{biblatex}
+\usepackage[bookmarks=false,colorlinks=false,pdfborder={0 0 0},linkbordercolor={0 0 0}]{hyperref}
+
+% make title fonts serif
+\setkomafont{sectioning}{\rmfamily\bfseries}
+
+% suppress In: <journal>
+\renewbibmacro{in:}{}
+
+% load bibtex files
+\addbibresource{report.bib}
+
+% bold vectors
+\renewcommand{\vec}[1]{\ensuremath{\mathbf{#1}}}
+
+% vector shortcuts
+\newcommand{\vx}{\vec{x}}
+\newcommand{\vw}{\vec{w}}
+\newcommand{\vy}{\vec{y}}
+\newcommand{\vz}{\vec{z}}
+
+\DeclareMathOperator*{\pr}{Pr}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\begin{document}
+
+\title{\Large 183.586 Computer Vision Systems Programming VO}
+\subtitle{Exam Information}
+\author{Christopher Pramerdorfer\\\small Computer Vision Lab, Vienna University of Technology}
+\maketitle
+
+\section{List of Questions} % (fold)
+\label{sec:list_of_questions}
+
+1. What factors should be considered when choosing a programming language?
+
+\bigskip\noindent
+2. Is there a \enquote{best} programming language? Why (not)?
+
+\bigskip\noindent
+3. What is the relation between image processing and Computer Vision (CV)?
+
+\bigskip\noindent
+4. What is the purpose of image processing? Name some examples.
+
+\bigskip\noindent
+5. Why should one not think in terms of algorithms when approaching CV problems?
+
+\bigskip\noindent
+6. What is the preferred way to approach CV problems and why?
+
+\bigskip\noindent
+7. What are the three steps to model-based CV solutions?
+
+\bigskip\noindent
+8. What is the difference between a model and an algorithm?
+
+\bigskip\noindent
+9. What is numerical optimization and how do iterative methods work?
+
+\bigskip\noindent
+10. How are images formed? Describe the pinhole camera model.
+
+\bigskip\noindent
+11. How does stereo reconstruction work?
+
+\bigskip\noindent
+12. What are depth sensors and how do they work?
+
+\bigskip\noindent
+13. Briefly describe some applications that utilize scene geometry.
+
+\bigskip\noindent
+15. What are the three discussed steps of 3D reconstruction?
+
+\bigskip\noindent
+16. Why is depth data well-suited for person detection?
+
+\bigskip\noindent
+17. How does Kinect's player pose estimation work?
+
+\bigskip\noindent
+18. What is a random forest and how does it work?
+
+\bigskip\noindent
+19. What kinds of object recognition are there and why is it challenging?
+
+\bigskip\noindent
+20. How does instance recognition of rigid objects work?
+
+\bigskip\noindent
+21. What are local features and why are they suitable for instance recognition?
+
+\bigskip\noindent
+22. How does Viola \& Jones' face detector work?
+
+\bigskip\noindent
+23. How does the bag of words model work and what is it used for?
+
+\bigskip\noindent
+24. What is the limitation of \enquote{traditional} object recognition methods?
+
+\bigskip\noindent
+25. What is deep learning and how are such models structured?
+
+\bigskip\noindent
+26. What is a convolutional neural network? How does it differ from a traditional MLP?
+
+\bigskip\noindent
+27. What is a convolutional layer?
+
+\bigskip\noindent
+28. How are convolutional neural networks structured?
+
+\bigskip\noindent
+
+\printbibliography
+
+\end{document}
