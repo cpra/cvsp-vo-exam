@@ -51,21 +51,38 @@
 \author{Christopher Pramerdorfer\\\small Computer Vision Lab, Vienna University of Technology}
 \maketitle
 
+\section{Exam Information} % (fold)
+\label{sec:exam_information}
+
+The exam is oral, takes around 15 minutes, and can be taken in German or English. I will ask you four random questions from the list below. You should be able to answer each question in your own words to show that you understand the discussed topics, but you don't have to know formulas or source code. There are seven categories of questions (see below) and each question I ask you will be from a different category.\footnote{The script I use for selecting questions is available at \url{https://github.com/cpra/cvsp-vo-exam}.}
+
+For preparation, I suggest that you take a look at the comments to the lecture slides, which are available at \url{https://github.com/cpra/cvsp-vo-slides} (the \texttt{.tex} files). If you don't understand something from the slides and comments, consult the references given on the corresponding lecture slides. Good luck!
+
+
+
 \section{List of Questions} % (fold)
 \label{sec:list_of_questions}
+
+The exam questions are as follows.
+
+\subsubsection*{Languages \& Libraries} % (fold)
 
 1. What factors should be considered when choosing a programming language?
 
 \bigskip\noindent
 2. Is there a \enquote{best} programming language? Why (not)?
 
-\bigskip\noindent
+
+\subsubsection*{Image Processing} % (fold)
+
 3. What is the relation between image processing and Computer Vision (CV)?
 
 \bigskip\noindent
 4. What is the purpose of image processing? Name some examples.
 
-\bigskip\noindent
+
+\subsubsection*{Models vs.\ Algorithms} % (fold)
+
 5. Why should one not think in terms of algorithms when approaching CV problems?
 
 \bigskip\noindent
@@ -80,7 +97,9 @@
 \bigskip\noindent
 9. What is numerical optimization and how do iterative methods work?
 
-\bigskip\noindent
+
+\subsubsection*{3D Vision} % (fold)
+
 10. How are images formed? Describe the pinhole camera model.
 
 \bigskip\noindent
@@ -89,52 +108,129 @@
 \bigskip\noindent
 12. What are depth sensors and how do they work?
 
-\bigskip\noindent
-13. Briefly describe some applications that utilize scene geometry.
+
+\subsubsection*{3D Vision Applications} % (fold)
+
+13. What are the three discussed steps of 3D reconstruction?
 
 \bigskip\noindent
-15. What are the three discussed steps of 3D reconstruction?
+14. How does Kinect's player pose estimation work?
 
 \bigskip\noindent
-16. Why is depth data well-suited for person detection?
+15. What is a random forest and how does it work?
+
+
+\subsubsection*{Object Recognition 1} % (fold)
+
+16. What kinds of object recognition are there and why is it challenging?
 
 \bigskip\noindent
-17. How does Kinect's player pose estimation work?
+17. How does instance recognition of rigid objects work?
 
 \bigskip\noindent
-18. What is a random forest and how does it work?
+18. How does Viola \& Jones' face detector work?
 
 \bigskip\noindent
-19. What kinds of object recognition are there and why is it challenging?
+19. How does the bag of words model work and what is it used for?
+
+
+\subsubsection*{Object Recognition 2} % (fold)
+
+20. What is the limitation of \enquote{traditional} object recognition methods?
 
 \bigskip\noindent
-20. How does instance recognition of rigid objects work?
+21. What is deep learning and how are such models structured?
 
 \bigskip\noindent
-21. What are local features and why are they suitable for instance recognition?
+22. What is a convolutional neural network and how is it structured?
+
+
+
+\section{Fragenkatalog} % (fold)
+\label{sec:fragenkatalog}
+
+Die Prüfungsfragen lauten wie folgt.
+
+\subsubsection*{Languages \& Libraries} % (fold)
+
+1. Welche Faktoren sollten bei der Wahl einer Programmiersprache beachtet werden?
 
 \bigskip\noindent
-22. How does Viola \& Jones' face detector work?
+2. Gibt es eine \enquote{beste} Programmiersprache? Warum (nicht)?
+
+
+\subsubsection*{Image Processing} % (fold)
+
+3. Wie stehen Image Processing und Computer Vision (CV) in Zusammenhang?
 
 \bigskip\noindent
-23. How does the bag of words model work and what is it used for?
+4. Was ist der Zweck von Image Processing? Nennen Sie Beispiele.
+
+
+\subsubsection*{Models vs.\ Algorithms} % (fold)
 
 \bigskip\noindent
-24. What is the limitation of \enquote{traditional} object recognition methods?
+5. Warum soll ein CV Lösungsansatz nicht auf Basis von Algorithmen gewählt werden?
 
 \bigskip\noindent
-25. What is deep learning and how are such models structured?
+6. Was ist der bevorzugte Lösungsansatz für CV Problem und warum?
 
 \bigskip\noindent
-26. What is a convolutional neural network? How does it differ from a traditional MLP?
+7. Wie lauten die drei Schritte modellbasierter CV Lösungen?
 
 \bigskip\noindent
-27. What is a convolutional layer?
+8. Was ist der Unterschied zwischen einem Modell und einem Algorithmus?
 
 \bigskip\noindent
-28. How are convolutional neural networks structured?
+9. Was ist numerische Optimierung und wie funktionieren iterative Methoden?
+
+
+\subsubsection*{3D Vision} % (fold)
+
+10. Wie entstehen Bilder? Beschreiben Sie das Lochkameramodell.
 
 \bigskip\noindent
+11. Wie funktioniert Stereo-Rekonstruktion?
+
+\bigskip\noindent
+12. Was sind Tiefensensoren und wie funktionieren sie?
+
+
+\subsubsection*{3D Vision Applications} % (fold)
+
+13. Wie lauten die drei besprochenen Schritte zur 3D Rekonstruktion?
+
+\bigskip\noindent
+14. Wie funktioniert die Haltungserkennung der Kinect?
+
+\bigskip\noindent
+15. Was ist ein Random Forest und wie funktioniert er?
+
+
+\subsubsection*{Object Recognition 1} % (fold)
+
+16. Welche Arten der Objekterkennung gibt es? Warum ist Objekterkennung schwierig?
+
+\bigskip\noindent
+17. Wie funktioniert die Instanzenerkennung von starren Objekten?
+
+\bigskip\noindent
+18. Wie funktioniert Viola \& Jones' Gesichtsdetektor?
+
+\bigskip\noindent
+19. Wie funktioniert das Bag of Words Modell und wozu wird es verwendet?
+
+
+\subsubsection*{Object Recognition 2} % (fold)
+
+20. Was ist die Einschränkung \enquote{traditioneller} Objekterkennungsmethoden?
+
+\bigskip\noindent
+21. Was ist Depp Learning und wie sehen solche Modelle aus?
+
+\bigskip\noindent
+22. Was ist ein Convolutional Neural Network und wie ist es aufgebaut?
+
 
 \printbibliography
 
