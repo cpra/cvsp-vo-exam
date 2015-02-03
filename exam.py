@@ -79,7 +79,7 @@ questions_de = (
     ),
     (
         'Was ist die Einschränkung traditioneller Objekterkennungsmethoden?',
-        'Was ist Depp Learning und wie sehen solche Modelle aus?',
+        'Was ist Deep Learning und wie sehen solche Modelle aus?',
         'Was ist ein Convolutional Neural Network und wie ist es aufgebaut?'
     )
 )
@@ -95,6 +95,6 @@ if q == 'de':
     questions = questions_de
 
 for c in categories:
-    qid = random.randint(0, len(questions[c])-1) # randomly choose question
-    print(questions[c][qid]) # print it
+    qid = random.randint(0, len(questions[c])-1)  # randomly choose question
+    print(questions[c][qid])  # print it
     input('')
