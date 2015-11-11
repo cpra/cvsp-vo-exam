@@ -54,184 +54,106 @@
 \section{Exam Information} % (fold)
 \label{sec:exam_information}
 
-The exam is oral, takes around 15 minutes, and can be taken in German or English. I will ask you four random questions from the list below. You should be able to answer each question in your own words to show that you understand the discussed topics, but you don't have to know formulas or source code. There are seven categories of questions (see below) and each question I ask you will be from a different category.\footnote{The script I use for selecting questions is available at \url{https://github.com/cpra/cvsp-vo-exam}.}
+The exam is oral, takes around 15 minutes, and can be taken in German or English. I will ask you four random questions from the list below. You should be able to answer each question in your own words to show that you understand the discussed topics, but you don't have to know formulas or source code. There are five categories of questions (see below) and each question I ask will be from a different category.\footnote{The script I will use for selecting questions is available at \url{https://github.com/cpra/cvsp-vo-exam}.}
 
-For preparation, I suggest that you take a look at the comments to the lecture slides, which are available at \url{https://github.com/cpra/cvsp-vo-slides} (the \texttt{.tex} files). If you don't understand something from the slides and comments, consult the references given on the corresponding lecture slides. Good luck!
+For preparation, I suggest that you take a look at the comments to the lecture slides, which are available at \url{https://github.com/cpra/cvsp-vo-slides} (the \texttt{.tex} files). If you don't understand something based on the slides and comments, consult the references given on the corresponding lecture slides. Good luck!
 
-
+\pagebreak
 
 \section{List of Questions} % (fold)
 \label{sec:list_of_questions}
 
 The exam questions are as follows.
 
-\subsubsection*{Languages \& Libraries} % (fold)
+\subsubsection*{Introduction \& Image Processing} % (fold)
+\label{ssub:introduction_image_processing}
 
-1. What factors should be considered when choosing a programming language?
+\begin{itemize}
+    \item What is Computer Vision (CV) and why is it important? Name some applications.
+    \item What is the purpose of image processing? Briefly describe some image processing operations. What is the relation between image processing and CV?
+\end{itemize}
 
-\bigskip\noindent
-2. Is there a \enquote{best} programming language? Why (not)?
+\subsubsection*{Programming Languages \& Libraries} % (fold)
 
+\begin{itemize}
+    \item Describe how the programming languages we covered in the lecture differ, and what libraries there are for CV-related tasks.
+    \item Which factors should be considered when choosing a programming language? Is there a best programming language? Why (not)?
+\end{itemize}
 
-\subsubsection*{Image Processing} % (fold)
+\subsubsection*{Approaching CV Problems} % (fold)
 
-3. What is the relation between image processing and Computer Vision (CV)?
+\begin{itemize}
+    \item Explain three things every CV problem consists of and the steps to solving CV problems. Describe and \enquote{solve} an example problem in this manner.
+    \item What is a model and what does it do? What kinds of models are there? How is machine learning related to all this?
+    \item We covered two approaches to selecting models. What are their differences and when are they applicable?
+\end{itemize}
 
-\bigskip\noindent
-4. What is the purpose of image processing? Name some examples.
+\subsubsection*{Specific Object Recognition} % (fold)
 
+\begin{itemize}
+    \item What is object recognition and why is it challenging? Explain the taxonomy used in the lecture using own examples.
+\end{itemize}
 
-\subsubsection*{Models vs.\ Algorithms} % (fold)
+\begin{itemize}
+    \item How does detection of planar rigid objects work? Name some example applications. What are $\vx$ and $\vw$? Which model is applicable and why? Explain how detection can be performed in an automatic manner.
+    \item What is the relation between corresponding points on a nonplanar object in two images? How can this relation be used to automatically find correspondences and for estimating 3D coordinates? What must be known for this to work?
+    \item Explain the basic idea behind constellation models. Why are they useful and what are they used for? Describe an example application that favors such models, and explain how the model could look like in this application.
+\end{itemize}
 
-5. Why should one not think in terms of algorithms when approaching CV problems?
+\subsubsection*{Object Category Recognition} % (fold)
 
-\bigskip\noindent
-6. What is the preferred way to approach CV problems and why?
+\begin{itemize}
+    \item What is the bag of words representation and how is it obtained? Explain the steps necessary to perform classification on this basis.
+    \item Explain how face detection works. Which properties are desired? What are Haar features, what do they encode, and why can they be computed so efficiently? What is boosting, how does it work, and how can it be used for face detection?
+    \item What is deep learning and what are the motivations for it? How do deep learning models look like? What are Convolutional Neural Networks (CNNs)? Which conditions must apply for CNNs to perform well?
+    \item Describe the structure two-layer Perceptrons and their properties. Why are such models not applicable for deep learning? What are convolutional layers? How and why can they be used to realize deep models?
+\end{itemize}
 
-\bigskip\noindent
-7. What are the three steps to model-based CV solutions?
-
-\bigskip\noindent
-8. What is the difference between a model and an algorithm?
-
-\bigskip\noindent
-9. What is numerical optimization and how do iterative methods work?
-
-
-\subsubsection*{3D Vision} % (fold)
-
-10. How are images formed? Describe the pinhole camera model.
-
-\bigskip\noindent
-11. How does stereo reconstruction work?
-
-\bigskip\noindent
-12. What are depth sensors and how do they work?
-
-
-\subsubsection*{3D Vision Applications} % (fold)
-
-13. What are the three discussed steps of 3D reconstruction?
-
-\bigskip\noindent
-14. How does Kinect's player pose estimation work?
-
-\bigskip\noindent
-15. What is a random forest and how does it work?
-
-
-\subsubsection*{Object Recognition 1} % (fold)
-
-16. What kinds of object recognition are there and why is it challenging?
-
-\bigskip\noindent
-17. How does instance recognition of rigid objects work?
-
-\bigskip\noindent
-18. How does Viola \& Jones' face detector work?
-
-\bigskip\noindent
-19. How does the bag of words model work and what is it used for?
-
-
-\subsubsection*{Object Recognition 2} % (fold)
-
-20. What is the limitation of \enquote{traditional} object recognition methods?
-
-\bigskip\noindent
-21. What is deep learning and how are such models structured?
-
-\bigskip\noindent
-22. What is a convolutional neural network and how is it structured?
-
-
+\pagebreak
 
 \section{Fragenkatalog} % (fold)
 \label{sec:fragenkatalog}
 
 Die Prüfungsfragen lauten wie folgt.
 
-\subsubsection*{Languages \& Libraries} % (fold)
+\subsubsection*{Einleitung \& Image Processing} % (fold)
 
-1. Welche Faktoren sollten bei der Wahl einer Programmiersprache beachtet werden?
+\begin{itemize}
+    \item Was ist Computer Vision (CV) und warum ist es wichtig? Nennen Sie Beispielanwendungen.
+    \item Was ist der Zweck von Image Processing? Beschreiben Sie kurz verschiedene Image Processing Operationen. Wie stehen Image Processing und CV in Zusammenhang?
+\end{itemize}
 
-\bigskip\noindent
-2. Gibt es eine \enquote{beste} Programmiersprache? Warum (nicht)?
+\subsubsection*{Programmiersprachen \& Bibliotheken} % (fold)
 
+\begin{itemize}
+    \item Beschreiben Sie inwiefern sich die in der Vorlesung besprochenen Programmiersprachen voneinander unterscheiden und welche CV Bibliotheken existieren.
+    \item Welche Faktoren beeinflussen die Wahl der Programmiersprache? Existiert eine beste Programmiersprache? Warum (nicht)?
+\end{itemize}
 
-\subsubsection*{Image Processing} % (fold)
+\subsubsection*{Lösen von CV Problemen} % (fold)
 
-3. Wie stehen Image Processing und Computer Vision (CV) in Zusammenhang?
+\begin{itemize}
+    \item Beschreiben Sie die drei Dinge, aus denen jedes CV Problem besteht, und die in der Vorlesung besprochenen Schritte zur Lösung solcher Probleme. Beschreiben und \enquote{lösen} Sie ein Beispielproblem auf diese Weise.
+    \item Was ist ein Modell und welchen Zweck hat es? Welche Arten von Modellen gibt es? Wie steht Machine Learning in Relation dazu?
+    \item In der Vorlesung wurden zwei Ansätze zur Wahl von Modellen besprochen. Wie unterscheiden sie sich und wann sind sie zutreffend?
+\end{itemize}
 
-\bigskip\noindent
-4. Was ist der Zweck von Image Processing? Nennen Sie Beispiele.
+\subsubsection*{Erkennung spezifischer Objekte} % (fold)
 
+\begin{itemize}
+    \item Was ist Objekterkennung und welche Herausforderungen gibt es? Beschreiben Sie die besprochenen Objekterkennungsarten anhand eigener Beispiele.
+    \item Wie können planare und starre Objekte erkannt werden? Nennen Sie Beispielanwendungen. Was beschreiben $\vx$ und $\vw$? Welches Modell ist angemessen? Beschreiben Sie, wie solche Objekte automatisch detektiert werden können.
+    \item Wie lautet die Relation zwischen korrespondierenden Punkten auf nicht-planaren Objekten in zwei Bildern? Wie kann diese Relation dazu benutzt werden, um solche Korrespondenzen automatisch zu finden und um 3D Koordinaten zu berechnen? Was muss dazu bekannt sein?
+    \item Beschreiben Sie die grundlegende Idee hinter Constellation Models. Warum sind solche Modelle sinnvoll und wozu werden sie verwendet? Beschreiben Sie eine Beispielanwendung und erklären Sie, wie ein solches Modell aussehen könnte.
+\end{itemize}
 
-\subsubsection*{Models vs.\ Algorithms} % (fold)
+\subsubsection*{Erkennung von Objektkategorien} % (fold)
 
-\bigskip\noindent
-5. Warum soll ein CV Lösungsansatz nicht auf Basis von Algorithmen gewählt werden?
-
-\bigskip\noindent
-6. Was ist der bevorzugte Lösungsansatz für CV Problem und warum?
-
-\bigskip\noindent
-7. Wie lauten die drei Schritte modellbasierter CV Lösungen?
-
-\bigskip\noindent
-8. Was ist der Unterschied zwischen einem Modell und einem Algorithmus?
-
-\bigskip\noindent
-9. Was ist numerische Optimierung und wie funktionieren iterative Methoden?
-
-
-\subsubsection*{3D Vision} % (fold)
-
-10. Wie entstehen Bilder? Beschreiben Sie das Lochkameramodell.
-
-\bigskip\noindent
-11. Wie funktioniert Stereo-Rekonstruktion?
-
-\bigskip\noindent
-12. Was sind Tiefensensoren und wie funktionieren sie?
-
-
-\subsubsection*{3D Vision Applications} % (fold)
-
-13. Wie lauten die drei besprochenen Schritte zur 3D Rekonstruktion?
-
-\bigskip\noindent
-14. Wie funktioniert die Haltungserkennung der Kinect?
-
-\bigskip\noindent
-15. Was ist ein Random Forest und wie funktioniert er?
-
-
-\subsubsection*{Object Recognition 1} % (fold)
-
-16. Welche Arten der Objekterkennung gibt es? Warum ist Objekterkennung schwierig?
-
-\bigskip\noindent
-17. Wie funktioniert die Instanzenerkennung von starren Objekten?
-
-\bigskip\noindent
-18. Wie funktioniert Viola \& Jones' Gesichtsdetektor?
-
-\bigskip\noindent
-19. Wie funktioniert das Bag of Words Modell und wozu wird es verwendet?
-
-
-\subsubsection*{Object Recognition 2} % (fold)
-
-20. Was ist die Einschränkung \enquote{traditioneller} Objekterkennungsmethoden?
-
-\bigskip\noindent
-21. Was ist Deep Learning und wie sehen solche Modelle aus?
-
-\bigskip\noindent
-22. Was ist ein Convolutional Neural Network und wie ist es aufgebaut?
-
-
-\printbibliography
+\begin{itemize}
+    \item Was beschreibt die Bag of Words Repräsentation und wie wird sie berechnet? Erklären Sie die Schritte, die notwendig sind, um damit Bilder zu klassifizieren.
+    \item Erklären Sie wie Gesichtserkennung funktioniert. Welche Eigenschaften sind gewünscht? Was sind Haar Features, was beschreiben sie und warum können Sie so effizient berechnet werden? Was ist Boosting, wie funktioniert es und wie kann es zur Gesichtserkennung verwendet werden?
+    \item Was ist Deep Learning und was ist der Zweck? Wie sehen Deep Learning Modelle aus? Was sind Convolutional Neural Networks (CNNs)? Welche Bedingungen müssen erfüllt sein, damit CNNs gut funktionieren?
+    \item Beschreiben Sie die Struktur eines Perceptrons mit zwei Schichten. Warum sind solche Modelle nicht für Deep Learning geeignet? Was sind Convolutional Layers? Wie und warum können sie verwendet werden um \enquote{tiefe} Modelle zu realisieren?
+\end{itemize}
 
 \end{document}
